@@ -3,7 +3,7 @@ const app = require("express")();
 
 
 app.get('/',(req,res)=>{
-    res.json({message:"hello from server"})
+    res.json({message:"hello from server","status":true})
 })
 
 app.listen(3000,()=>{
