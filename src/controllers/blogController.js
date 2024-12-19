@@ -8,8 +8,7 @@ const getAllBlog = async (req, res) => {
 
 const addBlog = async (req, res) => {
   
-//  const insertBlog = await blogService.createNewBlog(req.body)
-const insertBlog = [];
+ const insertBlog = await blogService.createNewBlog(req.body)
   if (insertBlog) {
     res.json({ message: "inserted successfully", data: insertBlog });
   }
